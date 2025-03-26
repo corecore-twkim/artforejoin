@@ -9,7 +9,8 @@
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
     "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
-    "vercel-build": "npm run build"
+    "vercel-build": "npm run build",
+    "postinstall": "npm install tailwindcss@latest postcss@latest autoprefixer@latest"
   },
   "dependencies": {
     "@cloudflare/next-on-pages": "^1.13.10",
